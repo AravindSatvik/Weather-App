@@ -14,6 +14,7 @@ const partialspath=path.join(__dirname,'../templates/partials');
 
 //server set up
 const app=express();
+const port=process.env.PORT || 3000;
 app.set('view engine','hbs');  //set up handlebars engine
 app.set('views',viewspath);
 hbs.registerPartials(partialspath)  //registerpartials takes the path where partials live in.
@@ -51,6 +52,6 @@ app.get('*',(req,res)=>{
 })
 
 //To make the server up and running
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("server is up on port 3000!")
 })

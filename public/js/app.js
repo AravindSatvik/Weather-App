@@ -20,7 +20,7 @@ var submitbtn=document.getElementById('submitbtn');
 submitbtn.addEventListener('click',(e)=>{
     e.preventDefault();
     errormsg.innerHTML="Loading...";
-    var url="http://localhost:3000/weather?city="+input1.value+"&state="+input2.value;
+    var url="/weather?city="+input1.value+"&state="+input2.value;
     fetch(url).then((response)=>{
         response.json().then(data=>{
             if (data.status){
