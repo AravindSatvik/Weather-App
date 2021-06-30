@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link href="/css/styles.css" rel="stylesheet">
+        {{>headitems}}
+    </head>
+
+    <body>
+        {{>header}}
+        <main id="mainid">
+            <form id="formid">
+                <input class="inputblock" id="input1" type="text" name="city" placeholder="City" required/>
+                <input class="inputblock" id="input2" type="text" name="state" placeholder="State" required/>
+                <button id="submitbtn" type="submit">Get Weather Report</button>
+                <p id="error" style="font-family: 'Manrope', sans-serif;"></p>
+            </form>
+            <div id="weatherdetails">
+                <img id="icon"/>
+                <p id="temperature">Temperature: - -</p>
+                <p id="windspeed">Wind Speed: - -</p>
+                <p id="winddirection">Wind Direction: - -</p>
+                <p id="pressure">Pressure: - -</p>
+                <p id="precipitation">Precipitation: - -</p>
+                <p id="humidity">Humidity: - -</p>
+                <p id="uvindex">UV Index: - -</p>
+                <p id="feelslike">Feels Like: - -</p>
+                <p id="visibility">Visibility: - -</p>
+                <p id="cloudcover">Cloud Cover: - -</p>
+            </div>
+        </main>
+        {{>footer}}
+        <script src="/js/app.js" type="text/javascript"></script>
+    </body>
+</html>

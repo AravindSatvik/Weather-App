@@ -1,0 +1,78 @@
+.header-info{
+    color: white;
+    background-image: url("https://www.publicdomainpictures.net/pictures/270000/velka/sky-blue-background-1537733271HQq.jpg");
+}
+.nav-info{
+    display: flex;
+    align-items: center;
+    justify-content:center
+}
+.leftmenudiv{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(231, 221, 203);
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#formid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputblock{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    margin: 5px;
+}
+#submitbtn{
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-image: url("https://www.publicdomainpictures.net/pictures/270000/velka/sky-blue-background-1537733271HQq.jpg");
+    display: flex;
+    justify-content: center;
+}
+.footertext{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.footertext i{
+    font-size: 15px;
+}
+
+#weatherdetails{
+    font-family: 'Manrope', sans-serif;
+}
