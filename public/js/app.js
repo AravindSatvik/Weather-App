@@ -1,7 +1,6 @@
-console.log('Client side js is loaded aravind');
-
 var weatherdetails=document.getElementById('weatherdetails');
 var icon=document.getElementById('icon');
+var weatherdesc=document.getElementById('weatherdesc');
 var temperature=document.getElementById('temperature');
 var windspeed=document.getElementById('windspeed');
 var winddirection=document.getElementById('winddirection');
@@ -27,6 +26,7 @@ submitbtn.addEventListener('click',(e)=>{
                 errormsg.innerHTML=data.status;
                 icon.src='';
                 icon.alt='';
+                weatherdesc.innerHTML='';
                 temperature.innerHTML='Temperature: - -';
                 windspeed.innerHTML='Wind Speed: - -';
                 winddirection.innerHTML='Wind Direction: - -';
@@ -42,6 +42,7 @@ submitbtn.addEventListener('click',(e)=>{
                 errormsg.innerHTML='';
                 icon.src=data.weather_icons[0];
                 icon.alt='climate logo';
+                weatherdesc.innerHTML=data.weather_descriptions[0];
                 temperature.innerHTML='Temperature: '+data.temperature+' °C';
                 windspeed.innerHTML='Wind Speed: '+data.wind_speed+' Km/h';
                 winddirection.innerHTML='Wind Direction: '+data.wind_degree+'° '+data.wind_dir;

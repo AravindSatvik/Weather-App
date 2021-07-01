@@ -76,3 +76,9 @@ footer{
 #weatherdetails{
     font-family: 'Manrope', sans-serif;
 }
+#weatherdescription{
+    display: flex;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    justify-content: space-around;
+}
