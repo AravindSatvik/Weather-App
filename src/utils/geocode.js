@@ -1,7 +1,7 @@
 const request=require('request');
 
 const geocode=(location,state,callback)=>{
-    const url='https://api.mapbox.com/geocoding/v5/mapbox.places/'+encodeURIComponent(location)+'.json?access_token=pk.eyJ1IjoiYXJhdmluZDMyMSIsImEiOiJja3E3dnN0ODIwYTVhMm9vd3M5ZHd5MjNvIn0.KR9KtEfPZaYNe7W0uPbs0w&limit=3';
+    const url='https://api.mapbox.com/geocoding/v5/mapbox.places/'+encodeURIComponent(location)+'.json?access_token=ENTER_THE_API_KEY&limit=3';
     var check=false;
     var latitude=0;
     var longitude=0;
